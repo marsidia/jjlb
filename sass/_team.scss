@@ -1,0 +1,147 @@
+.team {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &__title {
+    color: $color-primary;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  &__content {
+    position: relative;
+
+    display: flex;
+    transition: all 0.6s;
+  }
+  &__btn {
+    border-color: $color-primary;
+
+    &--1 {
+      transform: rotate(-45deg) translateX(50%);
+      top: 33rem;
+      left: 1rem;
+    }
+    &--2 {
+      position: absolute;
+      top: 33rem;
+      right: 2rem;
+      transform: rotate(135deg) translateX(-50%);
+    }
+  }
+
+  &__card {
+    height: 40rem;
+    width: 30rem;
+
+    flex: 0 0 30rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // display: flex;
+    &.active .img1 {
+      opacity: 0;
+    }
+  }
+  &__pic {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s ease;
+    & img {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    & .img1 {
+      z-index: 5;
+      transition: all 0.4s ease;
+      filter: grayscale(100%) brightness(70%);
+    }
+    & .img2 {
+      z-index: 0;
+    }
+    &__details {
+      position: absolute;
+      bottom: 0;
+      z-index: 25;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30rem;
+      color: white;
+
+      strong {
+        font-size: 2.5rem;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      small {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+    &__btn {
+      background-color: rgba($color: $color-primary, $alpha: 0.8);
+      color: $color-dark;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 1rem;
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__desc-cont {
+    height: fit-content;
+    position: relative;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__desc {
+    color: black;
+
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      text-align: justify;
+    }
+
+    display: none;
+    &.active {
+      max-width: 50rem;
+      display: flex;
+
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      margin: 1rem;
+      gap: 1rem;
+      background-color: $color-primary;
+    }
+  }
+}

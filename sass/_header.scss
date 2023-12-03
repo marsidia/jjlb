@@ -1,0 +1,52 @@
+.header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+  }
+  & p {
+    color: rgb(187, 187, 187);
+    font-size: 2.5rem;
+    align-self: flex-end;
+    margin: 0 3rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+.logo {
+  position: relative;
+  margin: 3rem;
+
+  color: rgb(187, 187, 187);
+  transform: scale(0.8);
+}
+
+.heading-1 {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  font-family: "Cormorant SC", serif;
+  font-weight: 300;
+
+  font-size: 15rem;
+}
+.heading-2 {
+  position: absolute;
+  font-family: "Cormorant SC", serif;
+
+  bottom: -0.4rem;
+  left: 8.6rem;
+
+  font-weight: 300;
+  font-size: 3.6rem;
+}

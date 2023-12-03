@@ -1,0 +1,33 @@
+.about {
+  background-image: linear-gradient(
+      rgba(rgb(255, 255, 255), 0.4),
+      rgba(rgb(255, 255, 255), 0.4)
+    ),
+    url(https://images.unsplash.com/photo-1632749695469-42cfe0ede794?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+  }
+  & h3 {
+    color: $color-primary;
+    background-color: rgba(rgb(255, 255, 255), 0.7);
+    padding: 5rem 2rem;
+  }
+
+  & p {
+    color: $color-dark;
+    font-size: 1.7rem;
+    text-align: justify;
+    font-weight: 300;
+    background-color: rgba(rgb(255, 255, 255), 0.7);
+    padding: 5rem 2rem;
+  }
+}

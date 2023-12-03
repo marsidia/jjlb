@@ -1,0 +1,95 @@
+.comps {
+  font-size: 1.2rem;
+  background-color: white;
+  height: 100vh;
+  & h3 {
+    color: $color-primary;
+    padding: 2rem;
+  }
+  &__btn {
+    &--1 {
+      transform: rotate(-45deg) translateX(50%);
+      top: 60%;
+      left: 1rem;
+    }
+    &--2 {
+      position: absolute;
+      top: 60%;
+      right: 2rem;
+      transform: rotate(135deg) translateX(-50%);
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    position: relative;
+  }
+  &__content {
+    transition: all 0.5s;
+    display: flex;
+    height: 40rem;
+    align-items: center;
+  }
+}
+.card {
+  background-color: $color-primary;
+  position: relative;
+
+  flex: 0 0 30rem;
+  height: 30rem;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1rem;
+  margin: 1.5rem;
+
+  transition: all 0.5s ease;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    filter: grayscale(100);
+  }
+  &__texts {
+    z-index: 10;
+    background-color: rgba(rgb(255, 255, 255), 0.8);
+    height: 100%;
+    padding: 1rem;
+  }
+
+  & h4 {
+    color: $color-dark;
+    opacity: 1;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 10;
+  }
+  & p {
+    z-index: 10;
+
+    color: $color-dark;
+    font-size: 1.7rem;
+  }
+  & .fa-solid {
+    position: absolute;
+    z-index: 20;
+    top: -5rem;
+    left: 50%;
+    transform: translate(-50%, 2.5rem);
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.3);
+  }
+}

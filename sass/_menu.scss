@@ -1,0 +1,27 @@
+.menu {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 2rem 0;
+  color: $color-primary;
+  z-index: 40;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    li {
+      text-align: center;
+      padding: 0 1rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
